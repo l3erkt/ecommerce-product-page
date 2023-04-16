@@ -20,7 +20,12 @@
         <img id="menubtn" class="menu-btn" src="images/icon-menu.svg" alt="" />
         <img class="logo" src="images/logo.svg" alt="" />
         <ul id="navlinks" class="nav-links">
-          <img id="closebtn" class="close-btn" src="images/icon-close.svg" alt="">
+          <img
+            id="closebtn"
+            class="close-btn"
+            src="images/icon-close.svg"
+            alt=""
+          />
           <li><a href="#">Collections</a></li>
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
@@ -30,7 +35,22 @@
       </section>
       <!-- column 2 -->
       <section class="col-2">
-        <img class="cart-img-nav" src="images/icon-cart.svg" alt="" />
+        <div class="cart-display">
+          <span class="cart-title">Cart</span>
+          <!-- <p class="cart-empty">Your cart is empty</p> -->
+          <div class="cart-product">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" />
+            <div class="product-details">
+              <p>Fall limited Edition Sneakers</p>
+              <p>$125.00 x 3 <span class="bold-price">$375.00</span></p>
+            </div>
+            <img src="images/icon-delete.svg" alt="" />
+          </div>
+        </div>
+        <div class="cart-container">
+          <img class="cart-img-nav" src="images/icon-cart.svg" alt="" />
+          <span id="cart-number" class="cart-number">1</span>
+        </div>
         <img class="avatar-img" src="images/image-avatar.png" alt="" />
       </section>
     </nav>
@@ -39,15 +59,40 @@
         <div class="row-1__display">
           <img class="product-image" src="images/image-product-1.jpg" alt="" />
           <div class="image-btns">
-            <img id="previous" class="previous-btn" src="images/icon-previous.svg" alt="" />
+            <img
+              id="previous"
+              class="previous-btn"
+              src="images/icon-previous.svg"
+              alt=""
+            />
             <img id="next" class="next-btn" src="images/icon-next.svg" alt="" />
           </div>
         </div>
         <div class="thumbnails">
-          <img data-id="1" class="thumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
-          <img data-id="2" class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
-          <img data-id="3" class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
-          <img data-id="4" class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+          <img
+            data-id="1"
+            class="thumbnail"
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            data-id="2"
+            class="thumbnail"
+            src="images/image-product-2-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            data-id="3"
+            class="thumbnail"
+            src="images/image-product-3-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            data-id="4"
+            class="thumbnail"
+            src="images/image-product-4-thumbnail.jpg"
+            alt=""
+          />
         </div>
       </section>
       <section class="info">
@@ -73,7 +118,7 @@
             <img id="minus" class="minus" src="images/icon-minus.svg" alt="" />
             <img id="plus" class="plus" src="images/icon-plus.svg" alt="" />
           </div>
-          <button class="cart-btn">
+          <button id="cart-btn" class="cart-btn">
             <img class="cart-img-btn" src="images/icon-cart.svg" alt="" />Add to
             cart
           </button>

@@ -92,5 +92,19 @@ numIncrement();
 
 
 // cart basket
+
+
+
+const cartNumber = document.getElementById('cart-number')
+const cartBtn = document.getElementById('cart-btn')
+
 const basket = (quantity) => {
+  cartBtn.addEventListener('click', () => {
+    if (quantity === undefined || quantity === 0) {
+      cartNumber.style.display = 'none'
+    } else {
+      cartNumber.style.display = 'block'
+      cartNumber.innerText = quantity
+    }
+  })
 }
