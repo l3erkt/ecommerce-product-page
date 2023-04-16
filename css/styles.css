@@ -277,6 +277,7 @@ h6 {
     gap: 1.5rem;
   }
   .thumbnails .thumbnail {
+    cursor: pointer;
     border-radius: 0.7rem;
     transition: 0.2s ease-in-out;
   }
@@ -363,15 +364,19 @@ h6 {
   color: var(--clr-black);
 }
 .input-container .minus {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 10%;
+  padding: 0.7rem;
   transform: translate(-50%, -50%);
 }
 .input-container .plus {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 90%;
+  padding: 0.7rem;
   transform: translate(-50%, -50%);
 }
 
