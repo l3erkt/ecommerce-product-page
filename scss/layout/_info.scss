@@ -1,0 +1,47 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+  gap: 1rem 1.5rem;
+
+  // PRODUCT TEXT
+  .product-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  //  PRODUCT PRICE
+  .product-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .current {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  //   PRODUCT INPUT/BTN
+  .product-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+
+  .info {
+
+    .product-cart {
+      display: grid;
+      grid-template-columns: 35% 60%;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+}

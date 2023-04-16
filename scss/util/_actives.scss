@@ -1,0 +1,11 @@
+.active-bkg {
+    display: block;
+    opacity: 75%;
+}
+
+
+@media screen and (min-width: 48em) {
+    .active-bkg {
+        display: none;
+    }
+}

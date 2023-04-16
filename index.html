@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>E-commerce product page</title>
+  </head>
+  <body>
+    <div class="dark-bkg"></div>
+    <nav class="navbar">
+      <!-- column 1 -->
+      <section class="col-1">
+        <img id="menubtn" class="menu-btn" src="images/icon-menu.svg" alt="" />
+        <img class="logo" src="images/logo.svg" alt="" />
+        <ul id="navlinks" class="nav-links">
+          <img id="closebtn" class="close-btn" src="images/icon-close.svg" alt="">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+      <!-- column 2 -->
+      <section class="col-2">
+        <img class="cart-img-nav" src="images/icon-cart.svg" alt="" />
+        <img class="avatar-img" src="images/image-avatar.png" alt="" />
+      </section>
+    </nav>
+    <main class="hero">
+      <section class="display">
+        <div class="row-1__display">
+          <img class="product-image" src="images/image-product-1.jpg" alt="" />
+          <div class="image-btns">
+            <img id="previous" class="previous-btn" src="images/icon-previous.svg" alt="" />
+            <img id="next" class="next-btn" src="images/icon-next.svg" alt="" />
+          </div>
+        </div>
+        <div class="thumbnails">
+          <img data-id="1" class="thumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
+          <img data-id="2" class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+          <img data-id="3" class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+          <img data-id="4" class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </section>
+      <section class="info">
+        <div class="product-text">
+          <h4>Sneaker Company</h4>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div class="product-amount">
+          <div class="current">
+            <h1 class="price">$125.00</h1>
+            <h4 class="discount">50%</h4>
+          </div>
+          <span class="previous-price"><s>$250.00</s></span>
+        </div>
+        <div class="product-cart">
+          <div class="input-container">
+            <input class="cart-input" type="number" placeholder="0" />
+            <img class="minus" src="images/icon-minus.svg" alt="" />
+            <img class="plus" src="images/icon-plus.svg" alt="" />
+          </div>
+          <button class="cart-btn">
+            <img class="cart-img-btn" src="images/icon-cart.svg" alt="" />Add to
+            cart
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

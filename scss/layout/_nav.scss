@@ -1,0 +1,137 @@
+.navbar {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-1,
+.col-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+// col-1
+.col-1 {
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+    z-index: 6;
+  }
+
+  .nav-links {
+    position: absolute;
+    transform: translate(-100%);
+    background-color: var(--clr-white);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    display: flex;
+    font-weight: 700;
+    padding: 5.5rem 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 10;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: 0.5s;
+
+    .close-btn {
+      width: 16px;
+      position: absolute;
+      top: 5%;
+      bottom: 0;
+    }
+  }
+}
+
+// col-2
+.col-2 {
+  .cart-img-nav {
+    cursor: pointer;
+    filter: invert(48%) sepia(2%) saturate(2467%) hue-rotate(181deg)
+      brightness(89%) contrast(83%);
+    transition: 0.4s;
+
+    &:hover {
+      filter: unset;
+    }
+  }
+
+  .avatar-img {
+    width: 35px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 2rem;
+    border: 2px solid var(--clr-white);
+    transition: 1s ease-in-out;
+
+    &:hover {
+      width: 38px;
+      transform: rotate(360deg);
+      border: 2px solid var(--clr-orange);
+    }
+  }
+}
+
+.dark-bkg {
+  display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-black);
+  opacity: 0%;
+  z-index: 5;
+}
+
+@media screen and (min-width: 48em) {
+  .navbar {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--clr-light-greyish-blue);
+  }
+
+  // col-1
+  .col-1 {
+    gap: 3rem;
+
+    .menu-btn {
+      display: none;
+    }
+
+    .nav-links {
+      position: unset;
+      transform: unset;
+      flex-direction: row;
+      font-weight: unset;
+      box-shadow: unset;
+      padding: unset;
+      box-shadow: unset;
+
+      & li {
+        border-bottom: 3px solid var(--clr-white);
+      }
+
+      & li:hover {
+        font-weight: 700;
+        border-bottom: 3px solid var(--clr-orange);
+      }
+
+      .close-btn {
+        display: none;
+      }
+    }
+  }
+
+  .dark-bkg {
+    display: none;
+  }
+}

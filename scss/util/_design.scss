@@ -1,0 +1,115 @@
+// font and color for info container
+.info {
+  & h1 {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+  }
+
+  & h4 {
+    font-size: var(--fs-md);
+    color: var(--clr-orange);
+    font-weight: 700;
+  }
+
+  & p {
+    font-size: var(--fs-sm);
+    color: var(--clr-dark-greyish-blue);
+  }
+}
+
+// design of discount and old price
+.discount {
+  background-color: var(--clr-pale-orange);
+  padding: 0 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.previous-price {
+  font-size: var(--fs-sm);
+  color: var(--clr-greyish-blue);
+  font-weight: 700;
+}
+
+// design for product input & btn
+
+.input-container {
+  position: relative;
+
+  .cart-input {
+    width: 100%;
+    background-color: var(--clr-light-greyish-blue);
+    border: none;
+    text-align: center;
+    padding: 0.7rem;
+    color: var(--clr-black);
+    font-weight: 700;
+    border-radius: 0.7rem;
+
+    &::placeholder {
+      color: var(--clr-black);
+    }
+  }
+
+  .minus {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+
+  .plus {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.cart-btn {
+  cursor: pointer;
+  display: flex;
+  background-color: var(--clr-orange);
+  border: 1px solid var(--clr-white);
+  color: var(--clr-white);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-orange);
+    border: 1px solid var(--clr-orange);
+    .cart-img-btn {
+      filter: invert(73%) sepia(85%) saturate(4424%) hue-rotate(348deg)
+        brightness(102%) contrast(101%);
+    }
+  }
+
+  .cart-img-btn {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(256deg)
+      brightness(101%) contrast(102%);
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .input-container {
+    .minus {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+    }
+
+    .plus {
+      position: absolute;
+      top: 50%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
